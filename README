@@ -1,0 +1,35 @@
+Concept
+=======
+
+Une image de fond, quand elle est bien soignée, peut apporter à un site web un bel atout graphique. Hélas, avec la variété croissante des tailles d'écrans, on ne sait jamais dans quelles conditions le visiteur pourra profiter de notre belle image.
+
+bgMax permet de pallier ce problème, et d'aller même un peu plus loin.
+
+*  adaptation des mesures de l'image à celles de la fenêtre
+*	plusieurs modes d'ajustement
+*	apparition de l'image en fondu (optionnel)
+
+Intégration
+===========
+
+Pour commencer, il faut charger le script, en insérant le code suivant entre les balises `<head>` et `</head>` de la page :
+
+`<script src="bgMax.min.js" type="text/javascript"></script>`
+
+Ensuite, on déclenche l'effet par un tout petit bout de javascript placé en fin de page, juste avant la balise `</body>` :
+
+`<script type=\"text/javascript\">
+bgMax.init('dossier/mon-image.jpg');
+</script>`
+
+Options
+=======
+
+On peut également paramétrer plusieurs options, que l'on passera en second argument de la fonction, sous la forme d'un tableau associatif :
+
+`var options = { 
+	option1 : valeur1,
+	option2 : valeur2,
+	optionN : valeurN
+};
+bgMax.init('dossier/mon-image.jpg', options);`
