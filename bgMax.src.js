@@ -27,7 +27,7 @@
 	/**
 	 * transfer
 	 * 
-	 * retourne un objet contenant les propriétés et méthodes de l'objet /dest/,
+	 * Retourne un objet contenant les propriétés et méthodes de l'objet /dest/,
 	 * complétées et/ou écrasées par celles de l'objet /source/
 	 *
 	 * @param       source       {object}        l'objet source
